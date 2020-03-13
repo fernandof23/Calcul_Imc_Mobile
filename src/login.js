@@ -54,12 +54,13 @@ export default function Login(){
       </Button>
 
 
-      <Wrapper>
-        <TextResult imc={resul}>
+      <Wrapper imc={resul}>
+        <TextResult >
           Seu Imc: {resul }         
         </TextResult>
-        <TextResult imc={resul}>
+        <TextResult >
         {classification}
+        
         </TextResult>
       </Wrapper>
      
