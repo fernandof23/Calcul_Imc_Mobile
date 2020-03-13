@@ -38,4 +38,20 @@ export const Button = styled(TouchableOpacity)`
 export const TextButton = styled.Text`
   color:#fff;
   font-size:25px;
-`
+`;
+
+export const Wrapper = styled.View`
+  justify-content:center;
+  align-items:center;
+  margin:15px;
+  
+  border-radius:10px;
+  padding:20px;
+  `;
+
+export const TextResult = styled.Text`
+  margin:10px;
+  font-size:19px;
+  color:#000;
+
+`;
