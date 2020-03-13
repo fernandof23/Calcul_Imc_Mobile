@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import {Text} from 'react-native'
 
 import {Container,Input, Title, Button,TextButton, Wrapper, TextResult} from './styles'
 
@@ -54,7 +54,8 @@ export default function Login(){
       </Button>
 
 
-      <Wrapper imc={resul}>
+     { resul ? (
+        <Wrapper imc={resul}>
         <TextResult >
           Seu Imc: {resul }         
         </TextResult>
@@ -63,6 +64,7 @@ export default function Login(){
         
         </TextResult>
       </Wrapper>
+     ) : <Text>''</Text>}
      
     </Container>
   )
