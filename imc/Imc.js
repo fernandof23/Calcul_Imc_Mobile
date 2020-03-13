@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import {Text} from 'react-native'
 
-import {Container,Input, Title, Button,TextButton, Wrapper, TextResult} from './styles'
+import {Container, Title, Input, TextButton, TextResult, Button, Wrapper} from './styles'
 
-export default function Login(){
+export default function Imc(){
   const [weight, setWeight] = useState('')
   const [height, setHeight] = useState('')
   const [resul, setResul ] = useState('')
@@ -13,6 +13,14 @@ export default function Login(){
   function handleSubmit(){
     const heightFinish = height/100
     const imc = weight / (heightFinish*heightFinish)
+
+    if(weight === "" || weight === null){
+      return alert('INSIRA UM PESO VALIDO')
+    }
+
+    if(height === '' || height === null){
+      return alert('insira uma altura válida')
+    }
 
     setResul(imc.toFixed(2))
 

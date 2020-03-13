@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-import Login from './src/login'
+import Imc from './imc/Imc'
 
 export default function App(){
   return(
-    <Login/>
+    <Imc/>
   )
 }
