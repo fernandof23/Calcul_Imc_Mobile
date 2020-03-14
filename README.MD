@@ -5,7 +5,7 @@
 >Imagens abaixo
 
 
-<img src='./img/classe2.png'>
+<img src='./img/Classe2.png'>
 <img src="./img/leve.png">
 <img src="./img/levealto.png">
 <img src="./img/Zerado.png">
